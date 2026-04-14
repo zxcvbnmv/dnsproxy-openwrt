@@ -88,6 +88,8 @@ load_config_param() {
 		append_param_arg "cache" "size" "--cache-size"
 		append_param_arg "cache" "min_ttl" "--cache-min-ttl"
 		append_param_arg "cache" "max_ttl" "--cache-max-ttl"
+		append_param_arg "cache" "optimistic_answer_ttl" "--optimistic-answer-ttl"
+		append_param_arg "cache" "optimistic_max_age" "--optimistic-max-age"
 	}
 
 	is_enabled "dns64" "enabled" && {
